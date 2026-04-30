@@ -20,5 +20,6 @@ then
 	echo "ERROR!"
 fi
 
+# -executable matches files with execute permission; -exec cp copies each one to dst_dir
 find "$dir1" -type f -executable -exec cp -r '{}' "$dir2" \;
 echo "Happy End. Ok."

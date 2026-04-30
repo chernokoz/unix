@@ -1,4 +1,5 @@
 #!/bin/sh
+# grep -o ">online" returns non-empty only when the profile shows the online indicator
 prev=$(curl -L https://vk.com/id347745 2>/dev/null | grep -o ">online")
 if [ "$prev" = "" ]
 then
@@ -10,8 +11,9 @@ else
 fi
 
 
+# poll every 60 seconds and broadcast only on status transitions
 while :
-do	
+do
 now=$(curl -L https://vk.com/id347745 2>/dev/null | grep -o ">online")
 if [ "$now" != "$prev" ]
 then
