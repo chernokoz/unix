@@ -1,2 +1,2 @@
 # unix
-sh, bash scripts
+Scripts shell en sh et bash
