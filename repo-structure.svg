@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950" role="img" aria-labelledby="title desc">
+  <title id="title">Repository structure diagram for unix</title>
+  <desc id="desc">A visual map of the unix repository, showing README files, homework folders, exam folders, and shell script counts.</desc>
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="rootCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17324d"/>
+      <stop offset="100%" stop-color="#214f72"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      .bg { fill: url(#page); }
+      .title { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 48px; font-weight: 760; fill: #102235; letter-spacing: 0; }
+      .subtitle { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 22px; font-weight: 450; fill: #4b5f73; letter-spacing: 0; }
+      .small { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; font-weight: 520; fill: #64748b; letter-spacing: 0; }
+      .rootName { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 34px; font-weight: 760; fill: #ffffff; letter-spacing: 0; }
+      .rootMeta { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 19px; font-weight: 520; fill: #c8d7e6; letter-spacing: 0; }
+      .cardTitle { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 28px; font-weight: 760; fill: #13283b; letter-spacing: 0; }
+      .cardMeta { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 18px; font-weight: 540; fill: #5b6f83; letter-spacing: 0; }
+      .fileText { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 17px; font-weight: 560; fill: #1f3347; letter-spacing: 0; }
+      .note { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 17px; font-weight: 520; fill: #40556a; letter-spacing: 0; }
+      .pillText { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 15px; font-weight: 700; fill: #ffffff; letter-spacing: 0; }
+      .connector { fill: none; stroke: #9fb0c2; stroke-width: 3; stroke-linecap: round; }
+      .card { fill: #ffffff; stroke: #d8e0e8; stroke-width: 2; rx: 16; filter: url(#shadow); }
+      .folderIcon { fill: #e7f1fb; stroke: #8bb7df; stroke-width: 2; }
+      .scriptPill { fill: #2b7a78; }
+      .readmePill { fill: #6d5dfc; }
+      .examPill { fill: #c85b3d; }
+      .mutedLine { stroke: #e5ebf1; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1400" height="950"/>
+
+  <text x="80" y="85" class="title">unix repository structure</text>
+  <text x="82" y="124" class="subtitle">Shell and bash practice organized as homework sets, exams, README specs, and task scripts.</text>
+
+  <g transform="translate(80 175)">
+    <rect x="0" y="0" width="1240" height="132" rx="20" fill="url(#rootCard)" filter="url(#shadow)"/>
+    <g transform="translate(34 30)">
+      <path d="M0 18 Q0 8 10 8 H72 L88 25 H164 Q174 25 174 35 V82 Q174 92 164 92 H10 Q0 92 0 82 Z" fill="#d4e8ff" opacity="0.95"/>
+      <path d="M0 34 H174" stroke="#a6c6e6" stroke-width="3"/>
+    </g>
+    <text x="240" y="58" class="rootName">/workspaces/unix</text>
+    <text x="240" y="95" class="rootMeta">31 tracked project files: 25 shell scripts and 6 Markdown READMEs</text>
+    <g transform="translate(940 34)">
+      <rect x="0" y="0" width="112" height="34" rx="17" class="scriptPill"/>
+      <text x="20" y="23" class="pillText">25 .sh</text>
+      <rect x="132" y="0" width="122" height="34" rx="17" class="readmePill"/>
+      <text x="153" y="23" class="pillText">6 .md</text>
+      <text x="2" y="70" class="rootMeta">root README: sh, bash scripts</text>
+    </g>
+  </g>
+
+  <path class="connector" d="M700 307 V354"/>
+  <path class="connector" d="M210 354 H1190"/>
+  <path class="connector" d="M210 354 V385"/>
+  <path class="connector" d="M455 354 V385"/>
+  <path class="connector" d="M700 354 V385"/>
+  <path class="connector" d="M945 354 V385"/>
+  <path class="connector" d="M1190 354 V385"/>
+
+  <g transform="translate(80 385)">
+    <rect class="card" x="0" y="0" width="235" height="385"/>
+    <path class="folderIcon" d="M24 28 Q24 18 34 18 H92 L108 35 H190 Q200 35 200 45 V91 Q200 101 190 101 H34 Q24 101 24 91 Z"/>
+    <text x="24" y="146" class="cardTitle">hw1</text>
+    <text x="24" y="176" class="cardMeta">Homework 1</text>
+    <line x1="24" y1="202" x2="211" y2="202" class="mutedLine"/>
+    <text x="24" y="236" class="fileText">README.md</text>
+    <text x="24" y="270" class="fileText">task1.sh-task7.sh</text>
+    <text x="24" y="318" class="note">7 scripts</text>
+    <text x="24" y="348" class="note">unique shuffle, ping, random bytes, factorization, find</text>
+  </g>
+
+  <g transform="translate(325 385)">
+    <rect class="card" x="0" y="0" width="235" height="385"/>
+    <path class="folderIcon" d="M24 28 Q24 18 34 18 H92 L108 35 H190 Q200 35 200 45 V91 Q200 101 190 101 H34 Q24 101 24 91 Z"/>
+    <text x="24" y="146" class="cardTitle">hw2</text>
+    <text x="24" y="176" class="cardMeta">Homework 2</text>
+    <line x1="24" y1="202" x2="211" y2="202" class="mutedLine"/>
+    <text x="24" y="236" class="fileText">README.md</text>
+    <text x="24" y="270" class="fileText">task1.sh-task9.sh</text>
+    <text x="24" y="318" class="note">9 scripts</text>
+    <text x="24" y="348" class="note">conditionals, strings, options, processes, calendar output</text>
+  </g>
+
+  <g transform="translate(570 385)">
+    <rect class="card" x="0" y="0" width="235" height="385"/>
+    <path class="folderIcon" d="M24 28 Q24 18 34 18 H92 L108 35 H190 Q200 35 200 45 V91 Q200 101 190 101 H34 Q24 101 24 91 Z"/>
+    <text x="24" y="146" class="cardTitle">hw3</text>
+    <text x="24" y="176" class="cardMeta">Homework 3</text>
+    <line x1="24" y1="202" x2="211" y2="202" class="mutedLine"/>
+    <text x="24" y="236" class="fileText">README.md</text>
+    <text x="24" y="270" class="fileText">task1.sh, task3.sh-</text>
+    <text x="24" y="296" class="fileText">task9.sh</text>
+    <text x="24" y="344" class="note">8 scripts; task2.sh is absent</text>
+  </g>
+
+  <g transform="translate(815 385)">
+    <rect class="card" x="0" y="0" width="235" height="385"/>
+    <path class="folderIcon" d="M24 28 Q24 18 34 18 H92 L108 35 H190 Q200 35 200 45 V91 Q200 101 190 101 H34 Q24 101 24 91 Z"/>
+    <text x="24" y="146" class="cardTitle">exam</text>
+    <text x="24" y="176" class="cardMeta">Exam tasks</text>
+    <line x1="24" y1="202" x2="211" y2="202" class="mutedLine"/>
+    <text x="24" y="236" class="fileText">README.md</text>
+    <text x="24" y="270" class="fileText">failed_solution.sh</text>
+    <text x="24" y="318" class="note">2 archive-oriented tasks</text>
+    <rect x="24" y="334" width="122" height="30" rx="15" class="examPill"/>
+    <text x="42" y="354" class="pillText">exam work</text>
+  </g>
+
+  <g transform="translate(1060 385)">
+    <rect class="card" x="0" y="0" width="260" height="385"/>
+    <path class="folderIcon" d="M24 28 Q24 18 34 18 H92 L108 35 H190 Q200 35 200 45 V91 Q200 101 190 101 H34 Q24 101 24 91 Z"/>
+    <text x="24" y="146" class="cardTitle">final_exam</text>
+    <text x="24" y="176" class="cardMeta">Final exam reference</text>
+    <line x1="24" y1="202" x2="236" y2="202" class="mutedLine"/>
+    <text x="24" y="236" class="fileText">README.md</text>
+    <text x="24" y="284" class="note">Topic checklist: shell operators, filesystem commands, regex, sed, awk, jobs, permissions, globs</text>
+  </g>
+
+  <g transform="translate(80 820)">
+    <rect x="0" y="0" width="1240" height="74" rx="18" fill="#ffffff" stroke="#d8e0e8" stroke-width="2"/>
+    <text x="26" y="31" class="small">Reading guide</text>
+    <text x="26" y="56" class="note">Start with README.md, then each folder README for task specifications. Shell implementations live beside their specs as task*.sh files.</text>
+  </g>
+</svg>
